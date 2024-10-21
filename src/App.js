@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Chart from "react-apexcharts";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const [chartData, setChartData] = useState({
+        options: {
+            chart: {
+                id: "basic-bar",
+            },
+            xaxis: {
+                categories: [
+                    1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999,
+                ],
+            },
+        },
+        series: [30, 40, 45, 50, 49, 60, 70, 91],
+        label: ["A", "B", "C", "D", "E", "F", "G", "H"],
+    });
+
+    return (
+        <div className="app">
+            <div className="row">
+                <div className="mixed-chart">
+                    <Chart
+                        options={chartData.options}
+                        series={chartData.series}
+                        type="donut"
+                        width="500"
+                    />
+                </div>
+            </div>
+        </div>
+    );
+};
 
 export default App;

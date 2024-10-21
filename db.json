@@ -1,18 +1,11 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "John Doe",
-            "username": "johndoe",
-            "password": "",
-            "phone": "123-456-7890",
-            "email": "",
-            "address": {
-                "street": "123 Main St",
-                "city": "Anytown",
-                "state": "NY",
-                "zip": "12345"
-            }
-        }
-    ]
+    "users": [],
+    "products": [],
+    "orders": [],
+    "orderDetails": [],
+    "categories": [],
+    "cart": [],
+    "advertisement": [],
+    "roles": [],
+    "orderStatus": []
 }

@@ -7,6 +7,10 @@
         "@testing-library/react": "^13.4.0",
         "@testing-library/user-event": "^13.5.0",
         "apexcharts": "^3.54.1",
+        "axios": "^1.7.7",
+        "bootstrap": "^5.3.3",
+        "cloudinary": "^2.5.1",
+        "cloudinary-react": "^1.8.1",
         "front-end": "file:",
         "json-server": "^1.0.0-beta.3",
         "react": "^18.3.1",
@@ -20,7 +24,8 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "db": "json-server --watch db.json --port 3001"
+        "db": "json-server --watch db.json --port 3001",
+        "all": "react-scripts start & json-server --watch db.json --port 3001"
     },
     "eslintConfig": {
         "extends": [

@@ -1,11 +1,27 @@
 {
-    "users": [],
-    "products": [],
-    "orders": [],
-    "orderDetails": [],
-    "categories": [],
-    "cart": [],
-    "advertisement": [],
-    "roles": [],
-    "orderStatus": []
+  "users": [],
+  "products": [
+    {
+      "id": "e933",
+      "name": "",
+      "price": "",
+      "description": "",
+      "image": [
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1729645110/fdrcslxov9spo72psqty.jpg",
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1729645111/akn5uo3aycewneidnsiu.jpg"
+      ],
+      "status": 1,
+      "category_id": "",
+      "created_at": "2024-10-23T00:58:31.831Z",
+      "updated_at": "2024-10-23T00:58:31.831Z",
+      "deleted_at": ""
+    }
+  ],
+  "orders": [],
+  "orderDetails": [],
+  "categories": [],
+  "cart": [],
+  "advertisement": [],
+  "roles": [],
+  "orderStatus": []
 }

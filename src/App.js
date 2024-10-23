@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Product } from "./model/Product";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
-import { Cloudinary } from "cloudinary-core";
+import { Upload } from "./util/Upload";
 const App = () => {
     const [formData, setFormData] = useState(Product);
     const [images, setImages] = useState([]);
@@ -15,36 +15,36 @@ const App = () => {
             [name]: value,
         });
     };
+
     const handleImageChange = (e) => {
-        setImages(e.target.files); // Lấy tất cả file ảnh từ input
+        setImages(e.target.files);
     };
-    console.log("images", images);
+
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const uploaders = Array.from(images).map((image) => {
-            return image.File;
+
+        const uploader = Array.from(images).map((image) => {
+            return Upload(image);
         });
 
-        setImageURLs(uploaders);
+        const urls = await Promise.all(uploader);
+        setImageURLs(urls);
 
-        // Cập nhật thời gian và POST sau khi formData đã được cập nhật
         const updatedFormData = {
             ...formData,
             created_at: new Date().toISOString(),
             updated_at: new Date().toISOString(),
-            image: imageURLs,
+            image: urls,
         };
-        const urls = await Promise.all(uploaders);
-        setFormData(urls);
+
+        setFormData(updatedFormData);
 
         axios
             .post("http://localhost:3001/products", updatedFormData)
-
             .then((res) => {
-                console.log(res.data); // id sẽ được trả về từ server nếu json-server tự động tạo id
+                console.log(res.data);
             });
     };
-
     return (
         <div>
             <form onSubmit={handleSubmit} className="form-control">
@@ -83,6 +83,11 @@ const App = () => {
                 />
                 <button type="submit">Create</button>
             </form>
+            <div>
+                {imageURLs.map((url) => (
+                    <img src={url} alt="product" key={url} />
+                ))}
+            </div>
         </div>
     );
 };

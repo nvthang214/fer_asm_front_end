@@ -3,6 +3,8 @@ export const Advertisement = {
     name: "",
     image: "",
     context: "",
+    title: "",
+    description: "",
     priority: "", // uu tien
     status: 1,
     created_at: "",

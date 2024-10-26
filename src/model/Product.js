@@ -4,6 +4,8 @@ export const Product = {
     description: "",
     image: [],
     status: 1,
+    stock: 0,
+    storage: "",
     category_id: "",
     created_at: "",
     updated_at: "",

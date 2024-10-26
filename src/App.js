@@ -1,9 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
+
+import { useState } from "react";
 import { Product } from "./model/Product";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 import { Upload } from "./util/Upload";
-const App = () => {
+import ProductList from "./products/ProductList";
+import ProductDetail from "./products/detail/ProductDetail";
+import Landing from "./landing/Landing";
+import "./index.css";
+import Template from "./template/Template";
+const Ads = () => {
     const [formData, setFormData] = useState(Product);
     const [images, setImages] = useState([]);
     const [imageURLs, setImageURLs] = useState([]);
@@ -45,8 +53,9 @@ const App = () => {
                 console.log(res.data);
             });
     };
+
     return (
-        <div>
+        <div className="mt-5">
             <form onSubmit={handleSubmit} className="form-control">
                 <input
                     type="text"
@@ -76,6 +85,20 @@ const App = () => {
                     placeholder="Category ID"
                 />
                 <input
+                    type="text"
+                    name="stock"
+                    value={formData.stock}
+                    onChange={handleChange}
+                    placeholder="Stock"
+                />
+                <input
+                    type="text"
+                    name="storage"
+                    value={formData.storage}
+                    onChange={handleChange}
+                    placeholder="Storage"
+                />
+                <input
                     type="file"
                     name="image"
                     multiple
@@ -89,6 +112,23 @@ const App = () => {
                 ))}
             </div>
         </div>
+    );
+};
+const App = () => {
+    return (
+        <BrowserRouter>
+            <Template>
+                <Routes>
+                    <Route path="/products" element={<ProductList />}></Route>
+                    <Route
+                        path="/products/:slug"
+                        element={<ProductDetail />}
+                    ></Route>
+                    <Route path="/ads" element={<Ads />}></Route>
+                    <Route path="/" element={<Landing />}></Route>
+                </Routes>
+            </Template>
+        </BrowserRouter>
     );
 };
 

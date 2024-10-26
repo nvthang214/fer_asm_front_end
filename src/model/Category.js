@@ -1,7 +1,7 @@
 export const Category = {
-    id: null,
     name: "",
     status: 1,
+    parent_id: "",
     created_at: "",
     updated_at: "",
     deleted_at: "",

@@ -1,14 +1,9 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
+import formatPrice from "../../util/FormatPrice";
 
 function RelatedProduct(props) {
     const { setSlug } = useContext(props.context);
-    function formatPrice(price) {
-        return new Intl.NumberFormat("vi-VN", {
-            style: "currency",
-            currency: "VND",
-        }).format(price);
-    }
 
     return (
         <Link
@@ -20,8 +15,7 @@ function RelatedProduct(props) {
         >
             <div className="card shadow-sm">
                 <img
-                    className="card-img-top bg-dark cover"
-                    height="200"
+                    className="card-img-top bg-dark cover w-100"
                     alt=""
                     src={props.product.image?.[0]}
                 />

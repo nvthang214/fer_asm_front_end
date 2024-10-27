@@ -1,6 +1,6 @@
 export const Product = {
     name: "",
-    price: "",
+    price: 0,
     description: "",
     image: [],
     status: 1,

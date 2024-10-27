@@ -1,338 +1,427 @@
 {
-    "users": [],
-    "products": [
-        {
-            "id": "172a",
-            "name": "Nguyen Van Thang",
-            "price": "20",
-            "description": "asdasd",
-            "image": [
-                "https://res.cloudinary.com/dyggjqxhh/image/upload/v1729862641/ncsmaktpzdyzzt8prui6.png"
-            ],
-            "status": 1,
-            "stock": "434",
-            "storage": "256GB",
-            "category_id": "2",
-            "created_at": "2024-10-25T13:24:01.445Z",
-            "updated_at": "2024-10-25T13:24:01.445Z",
-            "deleted_at": ""
-        },
-        {
-            "id": "77f6",
-            "name": "dfsgdfsg",
-            "price": "20000",
-            "description": "gfdshfghsfghsfgh",
-            "image": [
-                "https://res.cloudinary.com/dyggjqxhh/image/upload/v1729864691/lfw9hx23lv8vik6lv8ml.webp"
-            ],
-            "status": 1,
-            "stock": 0,
-            "storage": "0",
-            "category_id": "4",
-            "created_at": "2024-10-25T13:58:11.039Z",
-            "updated_at": "2024-10-25T13:58:11.039Z",
-            "deleted_at": ""
-        },
-        {
-            "id": "97f6",
-            "name": "Iphone 13 promax 256GB | Chính hãng VN/A",
-            "price": "20000",
-            "description": "gfdshfghsfghsfgh",
-            "image": [
-                "https://res.cloudinary.com/dyggjqxhh/image/upload/v1729864698/stqojmb3owuhbhyapbtf.jpg"
-            ],
-            "status": 1,
-            "stock": 0,
-            "storage": "0",
-            "category_id": "4",
-            "created_at": "2024-10-25T13:58:18.710Z",
-            "updated_at": "2024-10-25T13:58:18.710Z",
-            "deleted_at": ""
-        },
-        {
-            "id": "3f59",
-            "name": "dfs sdjklfbn sdfolkjb sdfo sdfojk dsfsdlfj esedfolj gdfsg",
-            "price": "20000",
-            "description": "gfdshfghsfghsfgh",
-            "image": [
-                "https://res.cloudinary.com/dyggjqxhh/image/upload/v1729864680/k6syqxhcdctyq6ehcfne.jpg"
-            ],
-            "status": 1,
-            "stock": 1,
-            "storage": "512GB",
-            "category_id": "8",
-            "created_at": "2024-10-25T13:58:00.211Z",
-            "updated_at": "2024-10-25T13:58:00.211Z",
-            "deleted_at": ""
-        },
-        {
-            "id": "86a5",
-            "name": "Iphone 13 Promax 256GB | Chính Hãng VN/A",
-            "price": "30000000",
-            "description": "akljsbdfkjaSBFKJBADS FDSFSD",
-            "image": [
-                "https://res.cloudinary.com/dyggjqxhh/image/upload/v1729904886/c6xslfosrlrqn9yb66mi.jpg",
-                "https://res.cloudinary.com/dyggjqxhh/image/upload/v1729904887/srwet7qa3vtu9katus1j.webp",
-                "https://res.cloudinary.com/dyggjqxhh/image/upload/v1729904887/yepdbregdeqzxcn2pswa.jpg"
-            ],
-            "status": 1,
-            "stock": "13",
-            "storage": "256GB",
-            "category_id": "4",
-            "created_at": "2024-10-26T01:08:07.784Z",
-            "updated_at": "2024-10-26T01:08:07.784Z",
-            "deleted_at": ""
-        }
-    ],
-    "orders": [],
-    "orderDetails": [],
-    "categories": [
-        {
-            "id": "1",
-            "name": "Iphone",
-            "status": 1,
-            "parent_id": "",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "2",
-            "name": "Macbook",
-            "status": 1,
-            "parent_id": "",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "3",
-            "name": "Imac",
-            "status": 1,
-            "parent_id": "",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "4",
-            "name": "Ipad",
-            "status": 1,
-            "parent_id": "",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "5",
-            "name": "Apple Watch",
-            "status": 1,
-            "parent_id": "",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "7",
-            "name": "Airpods",
-            "status": 1,
-            "parent_id": "",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "8",
-            "name": "Iphone 13 series",
-            "status": 1,
-            "parent_id": "1",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "9",
-            "name": "Iphone 12 series",
-            "status": 1,
-            "parent_id": "1",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "10",
-            "name": "Iphone 11 series",
-            "status": 1,
-            "parent_id": "1",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "11",
-            "name": "Macbook 2024",
-            "status": 1,
-            "parent_id": "2",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "12",
-            "name": "Macbook 2023",
-            "status": 1,
-            "parent_id": "2",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "13",
-            "name": "Macbook 2022",
-            "status": 1,
-            "parent_id": "2",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "14",
-            "name": "Imac 2024",
-            "status": 1,
-            "parent_id": "3",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "15",
-            "name": "Imac 2023",
-            "status": 1,
-            "parent_id": "3",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "16",
-            "name": "Imac 2022",
-            "status": 1,
-            "parent_id": "3",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "17",
-            "name": "Ipad 2024",
-            "status": 1,
-            "parent_id": "4",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "18",
-            "name": "Ipad 2023",
-            "status": 1,
-            "parent_id": "4",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "19",
-            "name": "Ipad 2022",
-            "status": 1,
-            "parent_id": "4",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "20",
-            "name": "Apple Watch 2024",
-            "status": 1,
-            "parent_id": "5",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "21",
-            "name": "Apple Watch 2023",
-            "status": 1,
-            "parent_id": "5",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "22",
-            "name": "Apple Watch 2022",
-            "status": 1,
-            "parent_id": "5",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "23",
-            "name": "Airpods 2024",
-            "status": 1,
-            "parent_id": "7",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "24",
-            "name": "Airpods 2023",
-            "status": 1,
-            "parent_id": "7",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "25",
-            "name": "Airpods 2022",
-            "status": 1,
-            "parent_id": "7",
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        }
-    ],
-    "cart": [],
-    "advertisement": [
-        {
-            "id": "1",
-            "name": "Banner 1",
-            "image": "https://shopdunk.com/images/uploaded/banner/banner%202024/Thang%20_%2010/02_10/banner%20iphone%2016%20pro-%C4%90C_PC.png",
-            "context": "",
-            "title": "",
-            "description": "",
-            "priority": "",
-            "status": 1,
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        },
-        {
-            "id": "2",
-            "name": "",
-            "image": "https://shopdunk.com/images/uploaded/banner/banner%202024/Thang%20_%2010/banner%20iP15sr-T10_PC.png",
-            "context": "",
-            "title": "",
-            "description": "",
-            "priority": "",
-            "status": 1,
-            "created_at": "",
-            "updated_at": "",
-            "deleted_at": ""
-        }
-    ],
-    "roles": [],
-    "orderStatus": []
+  "users": [],
+  "products": [
+    {
+      "id": "7e9b",
+      "name": "iPhone 15 Pro Max 256GB | Chính hãng VN/A",
+      "price": 29390000,
+      "description": "Thiết kế khung viền từ titan chuẩn hàng không vũ trụ - Cực nhẹ, bền cùng viền cạnh mỏng cầm nắm thoải mái\nHiệu năng Pro chiến game thả ga - Chip A17 Pro mang lại hiệu năng đồ họa vô cùng sống động và chân thực\nThoả sức sáng tạo và quay phim chuyên nghiệp - Cụm 3 camera sau đến 48MP và nhiều chế độ tiên tiến\nNút tác vụ mới giúp nhanh chóng kích hoạt tính năng yêu thích của bạn",
+      "image": [
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1730038660/nditbtrbsaqgzy8bxzri.webp",
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1730038898/ywtu6acixeq1vq4iavxo.webp",
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1730038912/oissyiqalhh8ztpil14o.webp"
+      ],
+      "status": 1,
+      "stock": "23",
+      "storage": "256GB",
+      "category_id": "3",
+      "created_at": "2024-10-27T03:25:28.271Z",
+      "updated_at": "2024-10-27T14:21:53.270Z",
+      "deleted_at": ""
+    },
+    {
+      "id": "f17c",
+      "name": "iPhone 15 Pro Max 512GB | Chính hãng VN/A",
+      "price": 34990000,
+      "description": "Thiết kế khung viền từ titan chuẩn hàng không vũ trụ - Cực nhẹ, bền cùng viền cạnh mỏng cầm nắm thoải mái\nHiệu năng Pro chiến game thả ga - Chip A17 Pro mang lại hiệu năng đồ họa vô cùng sống động và chân thực\nThoả sức sáng tạo và quay phim chuyên nghiệp - Cụm 3 camera sau đến 48MP và nhiều chế độ tiên tiến\nNút tác vụ mới giúp nhanh chóng kích hoạt tính năng yêu thích của bạn",
+      "image": [
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1729999568/adzjj0r7dhwrda9fpr8k.webp"
+      ],
+      "status": 1,
+      "stock": "40",
+      "storage": "512GB",
+      "category_id": "3",
+      "created_at": "2024-10-27T03:26:10.574Z",
+      "updated_at": "2024-10-27T03:26:10.574Z",
+      "deleted_at": ""
+    },
+    {
+      "id": "d130",
+      "name": "iPhone 15 Pro Max 1TB | Chính hãng VN/A",
+      "price": 41990000,
+      "description": "Thiết kế khung viền từ titan chuẩn hàng không vũ trụ - Cực nhẹ, bền cùng viền cạnh mỏng cầm nắm thoải mái\nHiệu năng Pro chiến game thả ga - Chip A17 Pro mang lại hiệu năng đồ họa vô cùng sống động và chân thực\nThoả sức sáng tạo và quay phim chuyên nghiệp - Cụm 3 camera sau đến 48MP và nhiều chế độ tiên tiến\nNút tác vụ mới giúp nhanh chóng kích hoạt tính năng yêu thích của bạn",
+      "image": [
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1729999673/lpskmkcrkbfnsypwnxvo.webp"
+      ],
+      "status": 1,
+      "stock": "40",
+      "storage": "1TB",
+      "category_id": "3",
+      "created_at": "2024-10-27T03:27:55.382Z",
+      "updated_at": "2024-10-27T03:27:55.382Z",
+      "deleted_at": ""
+    },
+    {
+      "id": "f51e",
+      "name": "iPhone 15 Pro 1TB | Chính hãng VN/A",
+      "price": 38490000,
+      "description": "Thiết kế khung viền từ titan chuẩn hàng không vũ trụ - Cực nhẹ, bền cùng viền cạnh mỏng cầm nắm thoải mái\nHiệu năng Pro chiến game thả ga - Chip A17 Pro mang lại hiệu năng đồ họa vô cùng sống động và chân thực\nThoả sức sáng tạo và quay phim chuyên nghiệp - Cụm 3 camera sau đến 48MP và nhiều chế độ tiên tiến\nNút tác vụ mới giúp nhanh chóng kích hoạt tính năng yêu thích của bạn",
+      "image": [
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1729999713/aqmj5hgh1kd3z7herg52.webp"
+      ],
+      "status": 1,
+      "stock": "40",
+      "storage": "1TB",
+      "category_id": "3",
+      "created_at": "2024-10-27T03:28:35.538Z",
+      "updated_at": "2024-10-27T03:28:35.538Z",
+      "deleted_at": ""
+    },
+    {
+      "id": "2465",
+      "name": "iPhone 15 Pro 512GB | Chính hãng VN/A",
+      "price": 32990000,
+      "description": "Thiết kế khung viền từ titan chuẩn hàng không vũ trụ - Cực nhẹ, bền cùng viền cạnh mỏng cầm nắm thoải mái\nHiệu năng Pro chiến game thả ga - Chip A17 Pro mang lại hiệu năng đồ họa vô cùng sống động và chân thực\nThoả sức sáng tạo và quay phim chuyên nghiệp - Cụm 3 camera sau đến 48MP và nhiều chế độ tiên tiến\nNút tác vụ mới giúp nhanh chóng kích hoạt tính năng yêu thích của bạn",
+      "image": [
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1729999745/gg4szmumtnfbuy1wwduw.webp"
+      ],
+      "status": 1,
+      "stock": "40",
+      "storage": "512GB",
+      "category_id": "3",
+      "created_at": "2024-10-27T03:29:07.048Z",
+      "updated_at": "2024-10-27T03:29:07.048Z",
+      "deleted_at": ""
+    },
+    {
+      "id": "bda1",
+      "name": "iPhone 15 Pro 256GB | Chính hãng VN/A",
+      "price": 28390000,
+      "description": "Thiết kế khung viền từ titan chuẩn hàng không vũ trụ - Cực nhẹ, bền cùng viền cạnh mỏng cầm nắm thoải mái\nHiệu năng Pro chiến game thả ga - Chip A17 Pro mang lại hiệu năng đồ họa vô cùng sống động và chân thực\nThoả sức sáng tạo và quay phim chuyên nghiệp - Cụm 3 camera sau đến 48MP và nhiều chế độ tiên tiến\nNút tác vụ mới giúp nhanh chóng kích hoạt tính năng yêu thích của bạn",
+      "image": [
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1729999832/nitgxhwn3s0l43kjfptl.webp"
+      ],
+      "status": 1,
+      "stock": "40",
+      "storage": "256GB",
+      "category_id": "3",
+      "created_at": "2024-10-27T03:30:34.091Z",
+      "updated_at": "2024-10-27T03:30:34.092Z",
+      "deleted_at": ""
+    },
+    {
+      "id": "4e80",
+      "name": "iPhone 14 Pro 128GB | Chính hãng VN/A",
+      "price": 22990000,
+      "description": "Trải nghiệm thị giác ấn tượng - Màn hình Dynamic Island, sắc nét với công nghệ Super Retina XDR, mượt mà 120 Hz\nTuyệt đỉnh thiết kế, tỉ mỉ từng đường nét - Nâng cấp toàn diện với kiểu dáng mới, nhiều lựa chọn màu sắc trẻ trung\nHiệu năng hàng đầu thế giới - Apple A16 Bionic xử lí nhanh, ổn định mọi tác vụ\nCamera chuẩn nhiếp ảnh chuyên nghiệp - Camera sau 48MP trang bị nhiều công nghệ chụp đa dạng",
+      "image": [
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1729999960/iy8wt3g1vaiefdn0h6oh.webp"
+      ],
+      "status": 1,
+      "stock": "40",
+      "storage": "128GB",
+      "category_id": "4",
+      "created_at": "2024-10-27T03:32:42.407Z",
+      "updated_at": "2024-10-27T03:32:42.407Z",
+      "deleted_at": ""
+    },
+    {
+      "id": "aab2",
+      "name": "iPhone 14 Pro 256GB | Chính hãng VN/A",
+      "price": 24990000,
+      "description": "Trải nghiệm thị giác ấn tượng - Màn hình Dynamic Island, sắc nét với công nghệ Super Retina XDR, mượt mà 120 Hz\nTuyệt đỉnh thiết kế, tỉ mỉ từng đường nét - Nâng cấp toàn diện với kiểu dáng mới, nhiều lựa chọn màu sắc trẻ trung\nHiệu năng hàng đầu thế giới - Apple A16 Bionic xử lí nhanh, ổn định mọi tác vụ\nCamera chuẩn nhiếp ảnh chuyên nghiệp - Camera sau 48MP trang bị nhiều công nghệ chụp đa dạng",
+      "image": [
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1729999995/x9csmadvrfy5p4zaktv2.webp"
+      ],
+      "status": 1,
+      "stock": "40",
+      "storage": "256GB",
+      "category_id": "4",
+      "created_at": "2024-10-27T03:33:17.777Z",
+      "updated_at": "2024-10-27T03:33:17.777Z",
+      "deleted_at": ""
+    },
+    {
+      "id": "62fa",
+      "name": "iPhone 14 Pro 512GB | Chính hãng VN/A",
+      "price": 28990000,
+      "description": "Trải nghiệm thị giác ấn tượng - Màn hình Dynamic Island, sắc nét với công nghệ Super Retina XDR, mượt mà 120 Hz\nTuyệt đỉnh thiết kế, tỉ mỉ từng đường nét - Nâng cấp toàn diện với kiểu dáng mới, nhiều lựa chọn màu sắc trẻ trung\nHiệu năng hàng đầu thế giới - Apple A16 Bionic xử lí nhanh, ổn định mọi tác vụ\nCamera chuẩn nhiếp ảnh chuyên nghiệp - Camera sau 48MP trang bị nhiều công nghệ chụp đa dạng",
+      "image": [
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1730000106/a6rs3d4ya1zkzkbnngyj.webp"
+      ],
+      "status": 1,
+      "stock": "40",
+      "storage": "512GB",
+      "category_id": "4",
+      "created_at": "2024-10-27T03:35:07.933Z",
+      "updated_at": "2024-10-27T03:35:07.933Z",
+      "deleted_at": ""
+    },
+    {
+      "id": "194d",
+      "name": "iPhone 14 Pro 1TB | Chính hãng VN/A",
+      "price": 28990000,
+      "description": "Trải nghiệm thị giác ấn tượng - Màn hình Dynamic Island, sắc nét với công nghệ Super Retina XDR, mượt mà 120 Hz\nTuyệt đỉnh thiết kế, tỉ mỉ từng đường nét - Nâng cấp toàn diện với kiểu dáng mới, nhiều lựa chọn màu sắc trẻ trung\nHiệu năng hàng đầu thế giới - Apple A16 Bionic xử lí nhanh, ổn định mọi tác vụ\nCamera chuẩn nhiếp ảnh chuyên nghiệp - Camera sau 48MP trang bị nhiều công nghệ chụp đa dạng",
+      "image": [
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1730000150/hcxuhcy4id5aiakfkygv.webp"
+      ],
+      "status": 1,
+      "stock": "40",
+      "storage": "1TB",
+      "category_id": "4",
+      "created_at": "2024-10-27T03:35:51.917Z",
+      "updated_at": "2024-10-27T03:35:51.918Z",
+      "deleted_at": ""
+    },
+    {
+      "id": "be68",
+      "name": "iPhone 14 Promax 512GB | Chính hãng VN/A",
+      "price": 28990000,
+      "description": "Trải nghiệm thị giác ấn tượng - Màn hình Dynamic Island, sắc nét với công nghệ Super Retina XDR, mượt mà 120 Hz\nTuyệt đỉnh thiết kế, tỉ mỉ từng đường nét - Nâng cấp toàn diện với kiểu dáng mới, nhiều lựa chọn màu sắc trẻ trung\nHiệu năng hàng đầu thế giới - Apple A16 Bionic xử lí nhanh, ổn định mọi tác vụ\nCamera chuẩn nhiếp ảnh chuyên nghiệp - Camera sau 48MP trang bị nhiều công nghệ chụp đa dạng",
+      "image": [
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1730000210/ydt5a5t15cpbqeoswny9.webp"
+      ],
+      "status": 1,
+      "stock": "40",
+      "storage": "512GB",
+      "category_id": "4",
+      "created_at": "2024-10-27T03:36:52.330Z",
+      "updated_at": "2024-10-27T03:36:52.330Z",
+      "deleted_at": ""
+    },
+    {
+      "id": "3362",
+      "name": "iPhone 14 Promax 1TB | Chính hãng VN/A",
+      "price": 28990000,
+      "description": "Trải nghiệm thị giác ấn tượng - Màn hình Dynamic Island, sắc nét với công nghệ Super Retina XDR, mượt mà 120 Hz\nTuyệt đỉnh thiết kế, tỉ mỉ từng đường nét - Nâng cấp toàn diện với kiểu dáng mới, nhiều lựa chọn màu sắc trẻ trung\nHiệu năng hàng đầu thế giới - Apple A16 Bionic xử lí nhanh, ổn định mọi tác vụ\nCamera chuẩn nhiếp ảnh chuyên nghiệp - Camera sau 48MP trang bị nhiều công nghệ chụp đa dạng",
+      "image": [
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1730000217/gqkumhrqiqsjydfikgxl.webp"
+      ],
+      "status": 1,
+      "stock": "40",
+      "storage": "1TB",
+      "category_id": "4",
+      "created_at": "2024-10-27T03:36:58.920Z",
+      "updated_at": "2024-10-27T03:36:58.920Z",
+      "deleted_at": ""
+    },
+    {
+      "id": "0ab5",
+      "name": "iPhone 14 Promax 128GB | Chính hãng VN/A",
+      "price": 28990000,
+      "description": "Trải nghiệm thị giác ấn tượng - Màn hình Dynamic Island, sắc nét với công nghệ Super Retina XDR, mượt mà 120 Hz\nTuyệt đỉnh thiết kế, tỉ mỉ từng đường nét - Nâng cấp toàn diện với kiểu dáng mới, nhiều lựa chọn màu sắc trẻ trung\nHiệu năng hàng đầu thế giới - Apple A16 Bionic xử lí nhanh, ổn định mọi tác vụ\nCamera chuẩn nhiếp ảnh chuyên nghiệp - Camera sau 48MP trang bị nhiều công nghệ chụp đa dạng",
+      "image": [
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1730000259/jeybv0fcgx0f3bpvk75i.webp"
+      ],
+      "status": 1,
+      "stock": "40",
+      "storage": "128GB",
+      "category_id": "4",
+      "created_at": "2024-10-27T03:37:40.882Z",
+      "updated_at": "2024-10-27T03:37:40.882Z",
+      "deleted_at": ""
+    },
+    {
+      "id": "8e03",
+      "name": "iPhone 13 Promax 128GB | Chính hãng VN/A",
+      "price": 28990000,
+      "description": "Trải nghiệm thị giác ấn tượng - Màn hình Dynamic Island, sắc nét với công nghệ Super Retina XDR, mượt mà 120 Hz\nTuyệt đỉnh thiết kế, tỉ mỉ từng đường nét - Nâng cấp toàn diện với kiểu dáng mới, nhiều lựa chọn màu sắc trẻ trung\nHiệu năng hàng đầu thế giới - Apple A16 Bionic xử lí nhanh, ổn định mọi tác vụ\nCamera chuẩn nhiếp ảnh chuyên nghiệp - Camera sau 48MP trang bị nhiều công nghệ chụp đa dạng",
+      "image": [
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1730000354/locjmyprd19nu8lpax88.webp"
+      ],
+      "status": 1,
+      "stock": "40",
+      "storage": "128GB",
+      "category_id": "5",
+      "created_at": "2024-10-27T03:39:16.885Z",
+      "updated_at": "2024-10-27T03:39:16.885Z",
+      "deleted_at": ""
+    },
+    {
+      "id": "26f5",
+      "name": "iPhone 13 Promax 256GB | Chính hãng VN/A",
+      "price": 28990000,
+      "description": "Trải nghiệm thị giác ấn tượng - Màn hình Dynamic Island, sắc nét với công nghệ Super Retina XDR, mượt mà 120 Hz\nTuyệt đỉnh thiết kế, tỉ mỉ từng đường nét - Nâng cấp toàn diện với kiểu dáng mới, nhiều lựa chọn màu sắc trẻ trung\nHiệu năng hàng đầu thế giới - Apple A16 Bionic xử lí nhanh, ổn định mọi tác vụ\nCamera chuẩn nhiếp ảnh chuyên nghiệp - Camera sau 48MP trang bị nhiều công nghệ chụp đa dạng",
+      "image": [
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1730000360/zgbleppqcblvbvbyb3ef.webp"
+      ],
+      "status": 1,
+      "stock": "40",
+      "storage": "256GB",
+      "category_id": "5",
+      "created_at": "2024-10-27T03:39:22.031Z",
+      "updated_at": "2024-10-27T03:39:22.031Z",
+      "deleted_at": ""
+    },
+    {
+      "id": "f5b2",
+      "name": "iPhone 13 Promax 512GB | Chính hãng VN/A",
+      "price": 28990000,
+      "description": "Trải nghiệm thị giác ấn tượng - Màn hình Dynamic Island, sắc nét với công nghệ Super Retina XDR, mượt mà 120 Hz\nTuyệt đỉnh thiết kế, tỉ mỉ từng đường nét - Nâng cấp toàn diện với kiểu dáng mới, nhiều lựa chọn màu sắc trẻ trung\nHiệu năng hàng đầu thế giới - Apple A16 Bionic xử lí nhanh, ổn định mọi tác vụ\nCamera chuẩn nhiếp ảnh chuyên nghiệp - Camera sau 48MP trang bị nhiều công nghệ chụp đa dạng",
+      "image": [
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1730000364/bmv5hm6tafvncupqqi3k.webp"
+      ],
+      "status": 1,
+      "stock": "40",
+      "storage": "512GB",
+      "category_id": "5",
+      "created_at": "2024-10-27T03:39:26.089Z",
+      "updated_at": "2024-10-27T03:39:26.089Z",
+      "deleted_at": ""
+    },
+    {
+      "id": "55c5",
+      "name": "iPhone 13 Promax 1TB | Chính hãng VN/A",
+      "price": 28990000,
+      "description": "Trải nghiệm thị giác ấn tượng - Màn hình Dynamic Island, sắc nét với công nghệ Super Retina XDR, mượt mà 120 Hz\nTuyệt đỉnh thiết kế, tỉ mỉ từng đường nét - Nâng cấp toàn diện với kiểu dáng mới, nhiều lựa chọn màu sắc trẻ trung\nHiệu năng hàng đầu thế giới - Apple A16 Bionic xử lí nhanh, ổn định mọi tác vụ\nCamera chuẩn nhiếp ảnh chuyên nghiệp - Camera sau 48MP trang bị nhiều công nghệ chụp đa dạng",
+      "image": [
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1730000373/a1f89dpeaf1hw65vrffa.webp"
+      ],
+      "status": 1,
+      "stock": "40",
+      "storage": "1TB",
+      "category_id": "5",
+      "created_at": "2024-10-27T03:39:35.432Z",
+      "updated_at": "2024-10-27T03:39:35.432Z",
+      "deleted_at": ""
+    },
+    {
+      "id": "bcef",
+      "name": "iPhone 13 Pro 128GB | Chính hãng VN/A",
+      "price": 28990000,
+      "description": "Trải nghiệm thị giác ấn tượng - Màn hình Dynamic Island, sắc nét với công nghệ Super Retina XDR, mượt mà 120 Hz\nTuyệt đỉnh thiết kế, tỉ mỉ từng đường nét - Nâng cấp toàn diện với kiểu dáng mới, nhiều lựa chọn màu sắc trẻ trung\nHiệu năng hàng đầu thế giới - Apple A16 Bionic xử lí nhanh, ổn định mọi tác vụ\nCamera chuẩn nhiếp ảnh chuyên nghiệp - Camera sau 48MP trang bị nhiều công nghệ chụp đa dạng",
+      "image": [
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1730000380/bongrjcxcfstkmjvaoz1.webp"
+      ],
+      "status": 1,
+      "stock": "40",
+      "storage": "128GB",
+      "category_id": "5",
+      "created_at": "2024-10-27T03:39:42.189Z",
+      "updated_at": "2024-10-27T03:39:42.189Z",
+      "deleted_at": ""
+    },
+    {
+      "id": "2b7d",
+      "name": "iPhone 13 Pro 256GB | Chính hãng VN/A",
+      "price": 28990000,
+      "description": "Trải nghiệm thị giác ấn tượng - Màn hình Dynamic Island, sắc nét với công nghệ Super Retina XDR, mượt mà 120 Hz\nTuyệt đỉnh thiết kế, tỉ mỉ từng đường nét - Nâng cấp toàn diện với kiểu dáng mới, nhiều lựa chọn màu sắc trẻ trung\nHiệu năng hàng đầu thế giới - Apple A16 Bionic xử lí nhanh, ổn định mọi tác vụ\nCamera chuẩn nhiếp ảnh chuyên nghiệp - Camera sau 48MP trang bị nhiều công nghệ chụp đa dạng",
+      "image": [
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1730000385/wbzfnwzhf2ozon1a2zyo.webp"
+      ],
+      "status": 1,
+      "stock": "40",
+      "storage": "256GB",
+      "category_id": "5",
+      "created_at": "2024-10-27T03:39:46.812Z",
+      "updated_at": "2024-10-27T03:39:46.812Z",
+      "deleted_at": ""
+    },
+    {
+      "id": "08f0",
+      "name": "iPhone 13 Pro 512GB | Chính hãng VN/A",
+      "price": 28990000,
+      "description": "Trải nghiệm thị giác ấn tượng - Màn hình Dynamic Island, sắc nét với công nghệ Super Retina XDR, mượt mà 120 Hz\nTuyệt đỉnh thiết kế, tỉ mỉ từng đường nét - Nâng cấp toàn diện với kiểu dáng mới, nhiều lựa chọn màu sắc trẻ trung\nHiệu năng hàng đầu thế giới - Apple A16 Bionic xử lí nhanh, ổn định mọi tác vụ\nCamera chuẩn nhiếp ảnh chuyên nghiệp - Camera sau 48MP trang bị nhiều công nghệ chụp đa dạng",
+      "image": [
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1730000390/ivapcgq85axiwylbbyqg.webp"
+      ],
+      "status": 1,
+      "stock": "40",
+      "storage": "512GB",
+      "category_id": "5",
+      "created_at": "2024-10-27T03:39:52.364Z",
+      "updated_at": "2024-10-27T03:39:52.364Z",
+      "deleted_at": ""
+    },
+    {
+      "id": "9ebf",
+      "name": "iPhone 13 Pro 1TB | Chính hãng VN/A",
+      "price": 28990000,
+      "description": "Trải nghiệm thị giác ấn tượng - Màn hình Dynamic Island, sắc nét với công nghệ Super Retina XDR, mượt mà 120 Hz\nTuyệt đỉnh thiết kế, tỉ mỉ từng đường nét - Nâng cấp toàn diện với kiểu dáng mới, nhiều lựa chọn màu sắc trẻ trung\nHiệu năng hàng đầu thế giới - Apple A16 Bionic xử lí nhanh, ổn định mọi tác vụ\nCamera chuẩn nhiếp ảnh chuyên nghiệp - Camera sau 48MP trang bị nhiều công nghệ chụp đa dạng",
+      "image": [
+        "https://res.cloudinary.com/dyggjqxhh/image/upload/v1730000395/iboewp3jo76uurlrrgfm.webp"
+      ],
+      "status": 1,
+      "stock": "0",
+      "storage": "1TB",
+      "category_id": "5",
+      "created_at": "2024-10-27T03:39:57.284Z",
+      "updated_at": "2024-10-27T03:39:57.284Z",
+      "deleted_at": ""
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Iphone",
+      "status": 1,
+      "parent_id": "",
+      "created_at": "",
+      "updated_at": "",
+      "deleted_at": ""
+    },
+    {
+      "id": "3",
+      "name": "Iphone 15 series",
+      "status": 1,
+      "parent_id": "1",
+      "created_at": "",
+      "updated_at": "",
+      "deleted_at": ""
+    },
+    {
+      "id": "4",
+      "name": "Iphone 14 series",
+      "status": 1,
+      "parent_id": "1",
+      "created_at": "",
+      "updated_at": "",
+      "deleted_at": ""
+    },
+    {
+      "id": "5",
+      "name": "Iphone 13 series",
+      "status": 1,
+      "parent_id": "1",
+      "created_at": "",
+      "updated_at": "",
+      "deleted_at": ""
+    }
+  ],
+  "cart": [
+    {
+      "id": "2a95",
+      "product_id": "7e9b",
+      "price": 29390000,
+      "quantity": 2
+    },
+    {
+      "id": "be89",
+      "product_id": "f17c",
+      "price": 34990000,
+      "quantity": 2
+    }
+  ],
+  "advertisement": [
+    {
+      "id": "1",
+      "name": "Banner 1",
+      "image": "https://shopdunk.com/images/uploaded/banner/banner%202024/Thang%20_%2010/02_10/banner%20iphone%2016%20pro-%C4%90C_PC.png",
+      "context": "",
+      "title": "",
+      "description": "",
+      "priority": "",
+      "status": 1,
+      "created_at": "",
+      "updated_at": "",
+      "deleted_at": ""
+    },
+    {
+      "id": "2",
+      "name": "",
+      "image": "https://shopdunk.com/images/uploaded/banner/banner%202024/Thang%20_%2010/banner%20iP15sr-T10_PC.png",
+      "context": "",
+      "title": "",
+      "description": "",
+      "priority": "",
+      "status": 1,
+      "created_at": "",
+      "updated_at": "",
+      "deleted_at": ""
+    }
+  ],
+  "orders": [],
+  "orderDetails": [],
+  "roles": [],
+  "orderStatus": []
 }

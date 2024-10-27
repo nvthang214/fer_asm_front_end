@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-function Header() {
+function Header(props) {
     const [openedDrawer, setOpenedDrawer] = useState(false);
-
     function toggleDrawer() {
         setOpenedDrawer(!openedDrawer);
     }
@@ -17,7 +16,7 @@ function Header() {
     return (
         <header>
             <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-white border-bottom">
-                <div className="container-fluid">
+                <div className="container">
                     <Link className="navbar-brand" to="/" onClick={changeNav}>
                         <span className="ms-2 h2">
                             <i className="fa-brands fa-apple"></i>
@@ -43,16 +42,13 @@ function Header() {
                                 </Link>
                             </li>
                         </ul>
-                        <button
-                            type="button"
-                            className="btn  me-3 d-none d-lg-inline"
+                        <Link
+                            to="/cart"
+                            className="btn me-3 d-none d-lg-inline"
+                            onClick={changeNav}
                         >
-                            <i className="fa fa-shopping-cart">
-                                <span className="ms-1 badge rounded-pill bg-dark">
-                                    0
-                                </span>
-                            </i>
-                        </button>
+                            <i className="fa fa-shopping-cart"></i>
+                        </Link>
                         <ul className="navbar-nav mb-2 mb-lg-0">
                             <li className="nav-item dropdown">
                                 <a
@@ -72,7 +68,7 @@ function Header() {
                                 >
                                     <li>
                                         <Link
-                                            to="/dashboard"
+                                            to="/admin/dashboard"
                                             className="dropdown-item"
                                             onClick={changeNav}
                                         >

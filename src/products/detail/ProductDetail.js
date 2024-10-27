@@ -2,6 +2,8 @@ import RelatedProduct from "./RelatedProduct";
 import ScrollToTopOnMount from "../../template/ScrollToTopOnMount";
 import { createContext, useEffect, useState } from "react";
 import axios from "axios";
+import formatPrice from "../../util/FormatPrice";
+import { Bounce, toast, ToastContainer } from "react-toastify";
 
 function ProductDetail() {
     const [product, setProduct] = useState({});
@@ -50,17 +52,88 @@ function ProductDetail() {
                 count++ < 4
         );
     }
-    function formatPrice(price) {
-        return new Intl.NumberFormat("vi-VN", {
-            style: "currency",
-            currency: "VND",
-        }).format(price);
-    }
+
+    // Add to cart
+    const notify = (text) =>
+        toast.success(text, {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            transition: Bounce,
+        });
+    const notifyError = (text) =>
+        toast.error(text, {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            transition: Bounce,
+        });
+    const handleAddToCart = async (e) => {
+        e.preventDefault();
+
+        try {
+            const response = await axios.get("http://localhost:3001/cart");
+
+            if (response.status === 200) {
+                const cart = response.data;
+                let i = null;
+                cart.forEach((item) => {
+                    if (item.product_id === product.id) {
+                        i = item;
+                    }
+                });
+                if (i !== null) {
+                    const response = await axios.patch(
+                        `http://localhost:3001/cart/${i.id}`,
+                        {
+                            quantity: i.quantity + 1,
+                        }
+                    );
+
+                    if (response.status === 200) {
+                        notify("Sản phẩm đã được thêm vào giỏ hàng!");
+                        return;
+                    } else {
+                        notifyError("Thêm giỏ hàng thất bại!");
+                    }
+                }
+            }
+        } catch (error) {
+            console.log(error);
+        }
+
+        try {
+            const response = await axios.post("http://localhost:3001/cart", {
+                product_id: product.id,
+                price: product.price,
+                quantity: 1,
+            });
+
+            if (response.status === 201) {
+                notify("Sản phẩm đã được thêm vào giỏ hàng!");
+            } else {
+                notifyError("Có lỗi xảy ra, vui lòng thử lại!");
+            }
+        } catch (error) {
+            console.log(error);
+            notifyError("Có lỗi xảy ra, vui lòng thử lại!");
+        }
+    };
 
     return (
         <div className="container mt-5 py-4 px-xl-5">
             <ScrollToTopOnMount />
-
+            <ToastContainer />
             <div className="row mb-4">
                 <div className="d-none d-lg-block col-lg-1">
                     <div className="image-vertical-scroller">
@@ -113,7 +186,12 @@ function ProductDetail() {
                         <div className="row g-3 mb-4">
                             <div className="col">
                                 {product.stock > 0 ? (
-                                    <button className="btn btn-outline-dark py-2 w-100">
+                                    <button
+                                        className="btn btn-outline-dark py-2 w-100"
+                                        onClick={(e) => {
+                                            handleAddToCart(e);
+                                        }}
+                                    >
                                         <i className="fas fa-cart-plus" />
                                         Thêm vào giỏ hàng
                                     </button>

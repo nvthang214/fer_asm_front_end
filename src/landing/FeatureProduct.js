@@ -1,18 +1,12 @@
 import { Link } from "react-router-dom";
+import formatPrice from "../util/FormatPrice";
 
 function FeatureProduct({ products }) {
-    function formatPrice(price) {
-        return new Intl.NumberFormat("vi-VN", {
-            style: "currency",
-            currency: "VND",
-        }).format(price);
-    }
     return (
         <div className="col">
             <div className="card shadow-sm">
                 <img
-                    className="card-img-top bg-dark cover"
-                    height="240"
+                    className="card-img-top bg-dark cover w-100"
                     alt=""
                     src={products.image?.[0]}
                 />

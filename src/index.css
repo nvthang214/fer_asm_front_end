@@ -75,3 +75,8 @@
     font-size: 0.875rem;
     color: #6c757d;
 }
+@media (min-width: 1025px) {
+    .h-custom {
+        height: 100vh !important;
+    }
+}
